@@ -2,9 +2,9 @@
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 extract($_POST);
 $errors = [];
-$db_host = 'localhost';
-$db_user = 'root';
-$db_password = 'root';
+$db_host = 'app';
+$db_user = 'app_passwd';
+$db_password = 'test';
 $db_db = 'test';
 $mysqli = @new mysqli(
   $db_host,
@@ -86,9 +86,9 @@ $mysqli->close();
         <div class="col-sm-10">
           <select class="form-select" name="eiga" id="eiga">
             <option selected disabled>選択してください</option>
-            <option value="ボヘミアンラプソディ">ボヘミアンラプソディ</option>
-            <option value="セッション">セッション</option>
-            <option value="Let It Be">Let It Be</option>
+            <option value="ポケットモンスター">ポケットモンスター</option>
+            <option value="ハリーポッター">ハリーポッター</option>
+            <option value="名探偵コナン">名探偵コナン</option>
           </select>
         </div>
       </div>
